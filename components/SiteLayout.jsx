@@ -47,7 +47,7 @@ export default function Layout({ children }) {
                                     <span> Articles</span>
                                 </li>
 
-                                <Link href="/resume" >
+                                <Link href="/talks" >
                                     <li className="flex items-center gap-4 my-6 hover:animate-pulse cursor-pointer">
                                         <span>03</span>
                                         <hr className="w-[4rem] bg-white" />
@@ -67,7 +67,7 @@ export default function Layout({ children }) {
 
                             <div className="flex mt-2 gap-6">
                                 <a
-                                    href="https://github.com/kadetXx"
+                                    href="https://github.com/lamouresparus"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -75,7 +75,7 @@ export default function Layout({ children }) {
                                 </a>
 
                                 <a
-                                    href="https://twitter.com/kadetXx"
+                                    href="hhttps://twitter.com/lamoureSparus"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
@@ -83,7 +83,7 @@ export default function Layout({ children }) {
                                 </a>
 
                                 <a
-                                    href="mailto:hello@kadet.dev"
+                                    href="https://ng.linkedin.com/in/loveotudor"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
