@@ -1,8 +1,11 @@
 import Image from "next/image";
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Layout({ children }) {
+    const router = useRouter();
     return (
         <>
             <main className=" text-letter bg-gray-900 min-h-screen w-screen">
@@ -28,11 +31,15 @@ export default function Layout({ children }) {
 
                         <div className="my-16 text-sm uppercase hidden md:block">
                             <ul>
-                                <li className="flex items-center gap-4 my-6 hover:animate-pulse cursor-pointer">
-                                    <span>01</span>
-                                    <hr className="w-[3rem] bg-white" />
-                                    <span> Work</span>
-                                </li>
+                                <Link href="/"
+                                    className="border-white"
+                                >
+                                    <li className="flex items-center gap-4 my-6 hover:animate-pulse cursor-pointer">
+                                        <span>01</span>
+                                        <hr className="w-[2rem] bg-gray-300" />
+                                        <span> Work</span>
+                                    </li>
+                                </Link>
 
                                 <li className="flex items-center gap-4 my-6 hover:animate-pulse cursor-pointer">
                                     <span>02</span>
@@ -40,11 +47,13 @@ export default function Layout({ children }) {
                                     <span> Articles</span>
                                 </li>
 
-                                <li className="flex items-center gap-4 my-6 hover:animate-pulse cursor-pointer">
-                                    <span>03</span>
-                                    <hr className="w-[3rem] bg-white" />
-                                    <span> Resume</span>
-                                </li>
+                                <Link href="/resume" >
+                                    <li className="flex items-center gap-4 my-6 hover:animate-pulse cursor-pointer">
+                                        <span>03</span>
+                                        <hr className="w-[4rem] bg-white" />
+                                        <span> Talks</span>
+                                    </li>
+                                </Link>
                             </ul>
                         </div>
 
