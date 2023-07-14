@@ -9,13 +9,13 @@ export default function Layout({ children }) {
   return (
     <>
       <main className="text-letter bg-gray-900 min-h-screen w-screen">
-        <div className="flex flex-col md:flex-row m-auto">
-          <div className="w-full md:w-1/2 px-8 pt-4 md:py-12 md:pl-20 md:fixed overflow-scroll">
+        <div className="flex flex-col-reverse md:flex-row m-auto ">
+          <div className="w-full md:w-1/2 p-8 md:p-20 md:hidden ">
             <Image
                 src="/assets/loveOtudor.jpeg"
-                width={100}
-                height={100}
-                className="rounded-full shadow-xl border-4 border-pink-500 hover:border-pink-700 transform transition duration-300 hover:scale-110"
+                width={300}
+                height={300}
+                className="rounded-2xl sm:hidden w-full"
               />
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl mt-4 md:mt-0 font-extrabold tracking-tight leading-none">
@@ -32,11 +32,11 @@ export default function Layout({ children }) {
             <p className="my-4 text-lg text-letter/50 md:w-4/5">
               Love has experience building robust mobile applications and writing creative, educative,
               and catchy articles, blogs, and scripts. Love is a{" "}
-              <span className="text-bold text-letter">Past Outreachy intern and mentor at ODK-X </span>
+              <span className="text-bold text-letter">Past Outreachy intern and mentor at ODK-X</span>
               and has featured articles on several tech blogs such as CodeSource.io and Section.io.
             </p>
 
-            <div className="my-10 mx-auto text-sm uppercase md:block">
+            <div className="my-16 text-sm uppercase md:block">
                 <ul>
                     <Link href="/#work"
                         className="border-white"
@@ -67,9 +67,14 @@ export default function Layout({ children }) {
                 </ul>
             </div>
 
-            <div className="mt-8 hidden md:block">
+            <div className="mt-12 hidden md:block">
              <div className="flex gap-6 ">
-            
+              <Image
+                src="/assets/loveOtudor.jpeg"
+                width={50}
+                height={50}
+                className="rounded-full"
+              />
 
               <div className="flex mt-2 gap-6">
                 <a

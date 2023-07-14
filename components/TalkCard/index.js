@@ -22,7 +22,7 @@ export default function TalksCard() {
     ]
     return (
         <>
-            <div className="pt-32 pb-40 -my-8 group md:py-0">
+            <div className="sm:pt-32 sm:pb-40 -my-8 group md:py-0">
                 {talksContent && talksContent.map((talk, i) => (
                     <article className="my-4 bg-gray-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" itemScope itemType="http://schema.org/CreativeWork" key={i}>
                         <Link href={talk.link ?? "/"} target="_blank" rel="noopener noreferrer" className="block p-40">

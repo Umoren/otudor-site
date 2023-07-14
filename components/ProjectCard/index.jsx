@@ -26,10 +26,22 @@ export default function ProjectCard() {
             description: "A movie app built for mobile with Java",
             repoLink: "https://github.com/Lamouresparus/MyMovieApp"
         },
+        {
+            language: "Java",
+            title: "MyMovieApp",
+            description: "A movie app built for mobile with Java",
+            repoLink: "https://github.com/Lamouresparus/MyMovieApp"
+        },
+        {
+            language: "Java",
+            title: "MyMovieApp",
+            description: "A movie app built for mobile with Java",
+            repoLink: "https://github.com/Lamouresparus/MyMovieApp"
+        },
     ]
     return (
         <>
-            <div className="pt-32 pb-40 -my-8 group md:py-0">
+            <div className="sm:pt-32 sm:pb-40 -my-8 group md:py-0" data-href="">
                 {githubProjects && githubProjects.map((project, i) => (
                     <article className="my-4 bg-gray-800 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" itemScope itemType="http://schema.org/CreativeWork" key={i}>
                         <Link href={project.repoLink} target="_blank" rel="noopener noreferrer" className="block p-40">
