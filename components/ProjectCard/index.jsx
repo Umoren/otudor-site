@@ -26,18 +26,6 @@ export default function ProjectCard() {
             description: "A movie app built for mobile with Java",
             repoLink: "https://github.com/Lamouresparus/MyMovieApp"
         },
-        {
-            language: "Java",
-            title: "MyMovieApp",
-            description: "A movie app built for mobile with Java",
-            repoLink: "https://github.com/Lamouresparus/MyMovieApp"
-        },
-        {
-            language: "Java",
-            title: "MyMovieApp",
-            description: "A movie app built for mobile with Java",
-            repoLink: "https://github.com/Lamouresparus/MyMovieApp"
-        },
     ]
     return (
         <>
